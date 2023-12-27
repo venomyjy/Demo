@@ -1,0 +1,18 @@
+{
+  "appSelected": {
+    "appId": "5765880207853018095",
+    "appName": "GalTalk",
+    "deviceTypes": [
+      {
+        "deviceType": 4
+      }
+    ],
+    "enableSites": "CN",
+    "installationFree": 0,
+    "packageType": 7,
+    "projectId": "388421841221785720",
+    "projectName": "GalTalk",
+    "siteId": "CN"
+  },
+  "teamId": "70086000144426110"
+}

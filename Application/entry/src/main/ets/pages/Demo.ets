@@ -1,0 +1,85 @@
+@Entry
+@Component
+struct Demo {
+  @State message: string = 'Hello World'
+
+  build() {
+    Column() {
+      Column() {
+        Text("用户登录")
+          .width("200vp")
+          .height("60vp")
+          .offset({ x: "0vp", y: "-163.6vp" })
+          .fontColor(Color.Black)
+          .textAlign(TextAlign.Center)
+          .fontSize("22fp")
+        TextInput({ placeholder: "请输入用户名" })
+          .width("80%")
+          .height("60vp")
+          .offset({ x: "0vp", y: "-142.92vp" })
+        TextInput({ placeholder: "请输入密码" })
+          .width("80%")
+          .height("60vp")
+          .offset({ x: "0vp", y: "-125.6vp" })
+          .type(InputType.Password)
+        Row() {
+          Text("短信验证码登录")
+            .width("45%")
+            .height("100%")
+            .fontColor(Color.Grey)
+            .textAlign(TextAlign.Center)
+          Text("忘记密码\n")
+            .width("45%")
+            .height("100%")
+            .fontColor(Color.Grey)
+            .textAlign(TextAlign.Center)
+        }        
+        .width("95%")
+        .height("50vp")
+        .offset({ x: "0vp", y: "-104.53vp" })
+        .justifyContent(FlexAlign.SpaceBetween)
+        Button("登录")
+          .width("180vp")
+          .height("60vp")
+          .offset({ x: "0vp", y: "-46.06vp" })
+          .fontColor(Color.White)
+        Button("取消")
+          .width("180vp")
+          .height("60vp")
+          .offset({ x: "0vp", y: "-23.87vp" })
+          .fontColor(Color.White)
+        Column({ space: "0vp" }) {
+          Image($r('app.media.qq'))
+            .width("33%")
+            .height("100%")
+            .offset({ x: "-0.27vp", y: "0vp" })
+            .objectFit(ImageFit.Contain)
+          Image($r('app.media.huawei'))
+            .width("33%")
+            .height("100%")
+            .offset({ x: "-120.6vp", y: "-80vp" })
+            .objectFit(ImageFit.Contain)
+          Image($r('app.media.wx'))
+            .width("33%")
+            .height("100%")
+            .offset({ x: "120.4vp", y: "-160vp" })
+            .objectFit(ImageFit.Contain)
+        }        
+        .width("100%")
+        .height("80vp")
+        .offset({ x: "0vp", y: "170.66vp" })
+        .justifyContent(FlexAlign.SpaceBetween)
+      }      
+      .width("100%")
+      .height("100%")
+      .backgroundImage($r('app.media.bg1'), ImageRepeat.NoRepeat)
+      .backgroundImageSize(ImageSize.Cover)
+      .backgroundImagePosition(Alignment.Center)
+      .opacity(1)
+      .justifyContent(FlexAlign.Center)
+    }    
+    .width("100%")
+    .height("100%")
+    .justifyContent(FlexAlign.Center)
+  }
+}

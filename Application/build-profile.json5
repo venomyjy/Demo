@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\15546\\.ohos\\config\\auto_debug_Application_edu.yjy.galtalk_70086000144426110.cer",
+          "storePassword": "0000001B47025C527C0F41403267988910D40AF3FCA66FC21FEA1155FBD25795F31743478733CD22C4EAA2",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BCAFE8C92243CF94ECFBB1CC64F8014EE826BCB594C5CE8CCD4B3423997964DDB2C79826443D27D",
+          "profile": "C:\\Users\\15546\\.ohos\\config\\auto_debug_Application_edu.yjy.galtalk_70086000144426110.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\15546\\.ohos\\config\\auto_debug_Application_edu.yjy.galtalk_70086000144426110.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
